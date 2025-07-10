@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
 import { addUser } from '../utils/userSlice';
+import { BASE_URL } from '../utils/constants';
 const MailIcon = (props) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +76,7 @@ const Login = () => {
         }
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:7777/auth/login", { email: email, password: password }, {
+            const response = await axios.post(BASE_URL + "auth/login", { email: email, password: password }, {
                 withCredentials: true
             })
 
@@ -95,7 +96,7 @@ const Login = () => {
         }
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:7777/auth/signup", { email: email, password: password, firstName: firstName, lastName: lastName }, {
+            const response = await axios.post(BASE_URL + "auth/signup", { email: email, password: password, firstName: firstName, lastName: lastName }, {
                 withCredentials: true
             })
             if (response.status == 201) {
