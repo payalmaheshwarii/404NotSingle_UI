@@ -37,7 +37,7 @@ const Card = ({ user }) => {
         }
       )}
     >
-      <div className="p-6 flex flex-col items-center text-center overflow-y-auto">
+      <div className="p-6 flex flex-col items-center overflow-y-auto">
         <div className="w-36 h-36 rounded-full overflow-hidden mx-auto mb-4">
           <img
             alt="Profile"

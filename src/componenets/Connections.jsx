@@ -25,10 +25,10 @@ const Connections = () => {
 
   if (!connections) return null;
   if (connections.length === 0)
-    return <div className="text-center min-h-screen text-white py-10">No connections found</div>;
+    return <div className="flex flex-col text-center justify-center p-6 space-y-10 w-full text-white">No Connections found</div>;
 
   return (
-    <div className="bg-[#111827] min-h-screen px-4 py-10">
+    <div className="bg-[#111827] flex flex-col text-center justify-center px-4 py-10">
       <h1 className="text-3xl font-bold text-center text-white mb-8">Your Connections</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">

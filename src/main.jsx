@@ -10,6 +10,7 @@ import { store } from './utils/appStore.js';
 import { Provider } from 'react-redux';
 import Connections from './componenets/Connections.jsx';
 import Requests from './componenets/Requests.jsx';
+import Premium from './componenets/Premium.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -22,6 +23,8 @@ createRoot(document.getElementById('root')).render(
             <Route path='profile' element={<Profile />}></Route>
             <Route path='/connections' element={<Connections />}></Route>
             <Route path='/requests' element={<Requests />}></Route>
+            <Route path='/premium' element={<Premium />}></Route>
+            <Route path='*' element={() => <h1>404 Not Found</h1>}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="w-full bg-gradient-to-r from-red-700 to-black text-white mt-10">
+        <footer className="w-full bg-gradient-to-r from-red-700 to-black text-white">
   <div className="max-w-screen-xl mx-auto px-6 py-6 flex flex-col sm:flex-row items-center justify-between text-sm">
     <div className="text-center sm:text-left mb-4 sm:mb-0">
       © {new Date().getFullYear()} <span className="font-semibold">SourceMates</span>. All rights reserved.

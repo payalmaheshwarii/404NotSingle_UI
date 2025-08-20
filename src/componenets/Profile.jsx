@@ -38,7 +38,7 @@ const Profile = () => {
     }, []);
 
     if (!userData || loading) {
-        return <div className="text-center py-10 text-gray-600 text-lg">Loading profile...</div>;
+        return <div className="flex flex-col text-center justify-center py-10 text-gray-600 text-lg">Loading profile...</div>;
     }
 
     return (
