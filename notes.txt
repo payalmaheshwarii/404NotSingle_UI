@@ -1,0 +1,4 @@
+razorpay on payu2610 account: https://dashboard.razorpay.com/app/dashboard
+cloudflare on payu2610 account
+aws console from payu2610 account with pwd Payal@6351
+website live on https://sourcemates.live/login
