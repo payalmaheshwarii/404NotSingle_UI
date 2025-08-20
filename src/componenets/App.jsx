@@ -34,9 +34,9 @@ function App() {
 
   return (
     <>
-      <div className="flex-grow bg-[#111827] text-white">
+      <div className="h-screen flex flex-col bg-[#111827] text-white overflow-hidden">
         <Navbar />
-        <main className="flex-grow">
+        <main className="flex-grow overflow-y-auto">
           <Outlet />
         </main>
         <Footer />

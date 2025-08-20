@@ -36,10 +36,10 @@ const Requests = () => {
 
   if (!requests) return null;
   if (requests.length === 0)
-    return <div className="text-center min-h-screen text-white py-15">No requests found</div>;
+    return <div className="flex flex-col text-center justify-center p-6 space-y-10 w-full text-white">No requests found</div>;
 
   return (
-    <div className="bg-[#111827] min-h-screen px-4 py-10">
+    <div className="bg-[#111827] flex flex-col text-center justify-center px-4 py-10">
       <h1 className="text-3xl font-bold text-center text-white mb-8">Connection Requests</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
@@ -75,7 +75,7 @@ const Requests = () => {
                 </p>
                 <p className="text-sm text-gray-500 mt-1 italic">{about}</p>
 
-                <div className="flex gap-4 mt-4">
+                <div className="flex gap-4 mt-4 items-center justify-center">
                   <button
                     onClick={() => handleRequest('accepted', request._id)}
                     className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg font-medium transition"

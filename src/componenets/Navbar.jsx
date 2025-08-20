@@ -72,6 +72,11 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
+                    <Link to="/premium" className="block px-4 py-2 hover:bg-gray-100" onClick={() => setIsDropdownOpen(false)}> 
+                      Premium
+                    </Link>
+                  </li>
+                  <li>
                     <button
                       onClick={() => {
                         handleLogout();

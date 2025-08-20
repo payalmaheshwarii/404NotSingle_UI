@@ -52,7 +52,7 @@ const EditProfile = ({ user }) => {
         <>
             { showMessage && <div className="mx-auto max-w-md mt-6 px-4 py-3 bg-green-100 border border-green-400 text-green-700 rounded-lg shadow-md text-center"> ✅ Profile saved successfully! </div>  }
             {showErrorMessage && <div className='mx-auto max-w-md mt-6 px-4 py-3 bg-red-100 border border-red-400 text-red-700 rounded-lg shadow-md text-center'> {showErrorMessage} </div>}
-            <div className="min-h-screen flex items-center justify-center px-4 py-10">
+            <div className="flex flex-col items-center justify-center px-4 py-10">
 
                 <div className="flex items-center gap-8">
                     <div className="max-w-sm w-full bg-white shadow-xl rounded-2xl p-6 border border-gray-200 hover:shadow-2xl transition-all duration-300">
@@ -148,7 +148,8 @@ const EditProfile = ({ user }) => {
                         
                     </div>
                     
-                    <Card user = {{ firstName, lastName, age, gender, photoURL, about, skills }}/>
+                    
+                    <Card user = {{ firstName, lastName, age, gender, photoURL, about, skills }}/> 
                 </div>
                 
             </div>
@@ -157,4 +158,6 @@ const EditProfile = ({ user }) => {
     );
 };
 
+//TODO: when we click on connect or ignore in card of edit profile... it also do the swipes just like an idependent card component. Card should not be working like this in edit profile page. It should stick to UI on any button click
+//TODO: In mobile view these both componenets should come above each other.. not side by side
 export default EditProfile;
