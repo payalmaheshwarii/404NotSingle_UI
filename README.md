@@ -1,6 +1,6 @@
 # 🔥 SourceMates
 
-SourceMates is a Tinder-style matchmaking app built for coders to connect, collaborate, and code together. Whether you're looking for a pair-programming partner, a hackathon buddy, or a like-minded developer to build your next side project — SourceMates helps you swipe your way to synergy.
+SourceMates is a Tinder-style matchmaking app built for coders to connect, collaborate, and code together. Whether you're looking for a pair-programming partner, a hackathon buddy, or a like-minded developer to build your next side project, SourceMates helps you swipe your way to synergy.
 
 ## 🚀 Features
 
@@ -16,7 +16,7 @@ SourceMates is a Tinder-style matchmaking app built for coders to connect, colla
 | Layer       | Technology             |
 |-------------|------------------------|
 | Frontend    | React.js, Redux        |
-| Backend     | Node.js, Express.js    |
+| Backend     | Node.js, Express.js (https://github.com/payalmaheshwarii/404NotSingle)   |
 | Database    | MongoDB (Mongoose)     |
 | Styling     | TailwindCSS            |
 | Auth        | JWT, bcrypt            |
@@ -27,5 +27,11 @@ SourceMates is a Tinder-style matchmaking app built for coders to connect, colla
 ### 1. Clone the repository
 
 ```bash
+Frontend:
 git clone https://github.com/payalmaheshwarii/404NotSingle_UI
 cd sourcemates
+
+Backend:
+git clone https://github.com/payalmaheshwarii/404NotSingle
+cd sourcemates
+
