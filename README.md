@@ -16,7 +16,7 @@ SourceMates is a Tinder-style matchmaking app built for coders to connect, colla
 | Layer       | Technology             |
 |-------------|------------------------|
 | Frontend    | React.js, Redux        |
-| Backend     | Node.js, Express.js (https://github.com/payalmaheshwarii/404NotSingle)   |
+| Backend     | Node.js, Express.js   |
 | Database    | MongoDB (Mongoose)     |
 | Styling     | TailwindCSS            |
 | Auth        | JWT, bcrypt            |
@@ -28,10 +28,10 @@ SourceMates is a Tinder-style matchmaking app built for coders to connect, colla
 
 ```bash
 Frontend:
-git clone https://github.com/payalmaheshwarii/404NotSingle_UI
+git clone https://github.com/payalmaheshwarii/SourceMates_UI
 cd sourcemates
 
 Backend:
-git clone https://github.com/payalmaheshwarii/404NotSingle
+git clone https://github.com/payalmaheshwarii/SourceMates
 cd sourcemates
 
